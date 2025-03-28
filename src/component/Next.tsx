@@ -1,7 +1,7 @@
 import NextImg from "../assets/next.svg";
 const Next = () => {
   return (
-    <div className="flex justify-center items-center my-[10svh] mx-[5svw]">
+    <div className="flex justify-center items-center my-[4rem]">
       <img src={NextImg} alt="next" />
     </div>
   );
