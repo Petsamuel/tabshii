@@ -90,21 +90,21 @@ const Section3 = () => {
                 className="w-[10.5rem] h-[10.5rem] bg-white p-6 rounded-full"
               />
             </div>
-            <div className="flex gap-4 flex-col justify-center items-center text-center my-4">
-              <h2 className="text-[#1c1c1c] font-bold  text-4xl text-pretty text-center">
+            <div className="flex gap-4 flex-col justify-center items-center   my-4 text-center">
+              <h2 className="text-[#1c1c1c] font-bold  text-4xl text-pretty ">
                 {item.name}
               </h2>
-              <p className=" font-semibold text-[#1C1C1C]/70 text-pretty font-['DM Sans'] text-lg">
+              <p className=" font-semibold text-[#1C1C1C]/70 text-pretty font-['DM Sans'] text-lg ">
                 {item.discription}
               </p>
-              <div className="flex flex-col items-center w-full">
+              <div className="flex flex-col">
                 {item.items.map((item, index) => (
-                  <div key={index} className="flex gap-1 items-center my-2 ">
-                    <div className="text-[#1C1C1C]/70 text-[25px]">
+                  <div key={index} className="flex gap-1 items-center my-2">
+                    <div className="text-[#1C1C1C]/70 text-[25px] flex ">
                       {item.icons}
                     </div>
-                    <div className="flex gap-1">
-                      <h3 className="text-[#1C1C1C]/70 font-bold text-pretty text-xl capitalize">
+                    <div className="flex gap-1 ">
+                      <h3 className="text-[#1C1C1C]/70 font-bold text-pretty text-xl capitalize w-full">
                         {item.title}
                       </h3>
                     </div>
