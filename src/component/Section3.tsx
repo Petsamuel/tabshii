@@ -71,7 +71,7 @@ const Section3 = () => {
   ];
   return (
     <section>
-      <div className="grid lg:grid-cols-3 grid-col-1 space-x-5 space-y-5 mt-[4rem] ">
+      <div className="grid lg:grid-cols-3 grid-col-1 gap-5 mt-[4rem] ">
         {list.map((item, index) => (
           <div
             key={index}
@@ -81,23 +81,23 @@ const Section3 = () => {
                 : index === 1
                 ? "bg-[#00B090]/10"
                 : "bg-[#5243C2]/10"
-            } p-4 rounded-xl`}
+            } p-6 rounded-xl`}
           >
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex justify-center items-center gap-3 my-3">
               <img
                 src={item.svg}
                 alt="HR Solution tab"
-                className="w-[10.5rem] h-[10.5rem] bg-white p-4 rounded-full"
+                className="w-[10.5rem] h-[10.5rem] bg-white p-6 rounded-full"
               />
             </div>
-            <div className="flex gap-4 flex-col justify-center items-center text-center mt-4">
+            <div className="flex gap-4 flex-col justify-center items-center text-center my-4">
               <h2 className="text-[#1c1c1c] font-bold  text-4xl text-pretty text-center">
                 {item.name}
               </h2>
               <p className=" font-semibold text-[#1C1C1C]/70 text-pretty font-['DM Sans'] text-lg">
                 {item.discription}
               </p>
-              <div className="flex flex-col items-center w-full mb-4">
+              <div className="flex flex-col items-center w-full">
                 {item.items.map((item, index) => (
                   <div key={index} className="flex gap-1 items-center my-2 ">
                     <div className="text-[#1C1C1C]/70 text-[25px]">
